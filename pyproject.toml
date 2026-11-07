@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "dc_optimiser_data"
+version = "0.0.1"
+description = "Analysis of SolarEdge DC optimiser data"
+authors = [
+  { name = "sijinwnag" },
+]
+
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    
+]
+requires-python = "~=3.13.0"
+
+
+[tool.ruff]
+line-length = 99
+src = ["dc_optimiser_data"]
+include = ["pyproject.toml", "dc_optimiser_data/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["dc_optimiser_data"]
+force-sort-within-sections = true
+

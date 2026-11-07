@@ -1,0 +1,34 @@
+# Package list copied from 26_05_19_SE_validation/requirements.txt on 2026-11-07.
+
+# Core data + numerical
+numpy
+pandas
+scipy
+
+# Plotting
+matplotlib
+imageio          # GIF / animation export
+ipywidgets       # interactive notebook controls
+plotly           # interactive plots; lazy-import it so the package imports without it
+
+# PV / solar domain
+pvlib            # single-diode model: v_from_i, i_from_v, singlediode
+solcore          # 2-diode modelling
+
+# Machine learning
+scikit-learn     # e.g. KMeans clustering
+
+# Geographic / climate
+geopy            # Nominatim geocoding
+kgcpy            # Koppen-Geiger climate zone lookup
+
+# I/O
+openpyxl         # pandas .xlsx engine
+xlrd             # pandas legacy .xls engine
+requests         # HTTP
+pymupdf          # PDF text/render/crop
+
+# Tooling
+ruff
+python-dotenv
+-e .
